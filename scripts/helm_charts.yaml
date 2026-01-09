@@ -1,0 +1,112 @@
+---
+registry: master.cm.cluster:5000
+charts:
+- description: Grafana Alloy
+  name: alloy
+  install_name: alloy
+  enabled: false
+  repo: https://grafana.github.io/helm-charts
+  version: 1.2.1
+- description: Ceph CSI RBD
+  name: ceph-csi-rbd
+  install_name: ceph-csi-rbd
+  enabled: false
+  repo: https://ceph.github.io/csi-charts
+  version: 3.15.0
+- description: NVIDIA GPU Operator
+  name: gpu-operator
+  install_name: gpu-operator
+  enabled: false
+  repo: https://helm.ngc.nvidia.com/nvidia
+  version: v25.3.3
+- description: NIM Operator
+  name: k8s-nim-operator
+  install_name: k8s-nim-operator
+  enabled: false
+  repo: https://helm.ngc.nvidia.com/nvidia
+  version: 2.0.2
+- description: Prometheus Operator Stack
+  name: kube-prometheus-stack
+  install_name: kube-prometheus-stack
+  enabled: false
+  repo: https://prometheus-community.github.io/helm-charts
+  version: 77.6.2
+- description: Kubernetes State Metrics
+  name: kube-state-metrics
+  install_name: kube-state-metrics
+  enabled: true
+  repo: https://prometheus-community.github.io/helm-charts
+  version: 6.3.0
+- description: Kubernetes Dashboard
+  name: kubernetes-dashboard
+  install_name: kubernetes-dashboard
+  enabled: true
+  repo: https://kubernetes.github.io/dashboard/
+  version: 7.13.0
+- description: kyverno
+  name: kyverno
+  install_name: kyverno
+  enabled: true
+  repo: https://kyverno.github.io/kyverno/
+  version: 3.5.1
+- description: kyverno-policies
+  name: kyverno-policies
+  install_name: kyverno-policies
+  enabled: true
+  repo: https://kyverno.github.io/kyverno/
+  version: 3.5.1
+- description: Grafana Loki
+  name: loki
+  install_name: loki
+  enabled: false
+  repo: https://grafana.github.io/helm-charts
+  version: 6.40.0
+- description: LeaderWorkerSet operator
+  name: lws
+  install_name: lws
+  enabled: false
+  repo: oci://registry.k8s.io/lws/charts/lws
+  version: v0.7.0
+- description: MetalLB
+  name: metallb
+  install_name: metallb
+  enabled: false
+  repo: https://metallb.github.io/metallb
+  version: 0.15.2
+- description: Kubernetes Metrics Server
+  name: metrics-server
+  install_name: metrics-server
+  enabled: true
+  repo: https://kubernetes-sigs.github.io/metrics-server/
+  version: 3.13.0
+- description: Network Operator
+  name: network-operator
+  install_name: network-operator
+  enabled: false
+  repo: https://helm.ngc.nvidia.com/nvidia
+  version: 25.7.0
+- description: PostgreSQL Operator
+  name: postgres-operator
+  install_name: postgres-operator
+  enabled: false
+  repo: https://opensource.zalando.com/postgres-operator/charts/postgres-operator
+  version: 1.14.0
+- description: Prometheus Adapter
+  name: prometheus-adapter
+  install_name: prometheus-adapter
+  enabled: false
+  repo: https://prometheus-community.github.io/helm-charts
+  version: 5.1.0
+- description: Grafana Promtail
+  name: promtail
+  install_name: promtail
+  enabled: false
+  repo: https://grafana.github.io/helm-charts
+  version: 6.17.0
+- description: Spark Operator
+  name: spark-operator
+  install_name: spark-operator
+  enabled: false
+  repo: https://kubeflow.github.io/spark-operator
+  version: 2.3.0
+...
